@@ -1,0 +1,5 @@
+[INFO] Starting GPU monitoring on GPU 0 every 5s.
+[INFO] Logging to: logs/power_log_20250730_163413.jsonl
+
+[INFO] Received signal 15. Stopping monitoring...
+[INFO] Monitoring stopped and NVML shutdown completed.

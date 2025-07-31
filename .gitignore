@@ -1,0 +1,12 @@
+serialization_dir/
+data/
+*.pth
+*.bin
+*.zip
+*.txt
+*.tar
+*.tar.gz
+*.ckpt
+*.pt
+*.onnx
+*.h5
