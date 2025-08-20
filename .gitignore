@@ -10,3 +10,12 @@ data/
 *.pt
 *.onnx
 *.h5
+
+logs/
+*.err
+*.out
+*.log
+*.jsonl
+*.bin
+*.pth
+.hf_cache/
