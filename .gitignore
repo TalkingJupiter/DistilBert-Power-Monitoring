@@ -19,3 +19,4 @@ logs/
 *.bin
 *.pth
 .hf_cache/
+__pycache__/
