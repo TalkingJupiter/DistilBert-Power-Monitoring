@@ -3,7 +3,6 @@ data/
 *.pth
 *.bin
 *.zip
-*.txt
 *.tar
 *.tar.gz
 *.ckpt
@@ -20,3 +19,4 @@ logs/
 *.pth
 .hf_cache/
 __pycache__/
+machinefile.*

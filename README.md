@@ -120,14 +120,17 @@ CALL monitor_power(gpu_index, interval, log_path, pid)
  <br>
 
 # How to Run?
-## Option 1: Via submitting SH files
+## Option 1: Fully Automatic SH file
+To run the experiment on your device just run `submit_both.sh` file. There might be some errors due to system related if these errors occurs please use other options.
+
+## Option 2: Via submitting SH files
 Since this project build in the [REPACSS](https://repacss.org/) Data Center we used `sbatch` command to submit our jobs, but depending on your system you can customize the files. 
 
 1. Submit the `preprocess.sh` file. This will create the dataset to start the distillation process. 
 2. After `preprocess.sh` job completes, submit `distill_experiment.sh` file
 3. After the job completes it is ready to process the data.
 
-## Option 2: Run Manually
+## Option 3: Run Manually
 > ⚠️⚠️ IMPORTANT: It may take more than 12 hours to run the whole experiment. We do not advise you to run the experiment manually.
 
 

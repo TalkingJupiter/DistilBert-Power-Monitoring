@@ -16,8 +16,11 @@ set -euo pipefail
 cd "${SLURM_SUBMIT_DIR:-$PWD}"
 
 mkdir -p logs serialization_dir
-source ~/.bashrc
+
+source "$(conda info --base)/etc/profile.d/conda.sh"
+set +u
 conda activate distilbert
+set -u
 
 export CUDA_VISIBLE_DEVICES=0
 export TOKENIZERS_PARALLELISM=true

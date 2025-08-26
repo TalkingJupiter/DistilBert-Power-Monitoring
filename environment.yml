@@ -1,0 +1,18 @@
+name: distilbert-test
+channels: [pytorch, nvidia, conda-forge, defaults]
+dependencies:
+  - python=3.10
+  - pytorch::pytorch      # or pytorch-cuda=12.1 + pytorch for GPU via conda
+  - pip
+  - pip:
+      - transformers
+      - tokenizers
+      - datasets
+      - numpy
+      - tqdm
+      - tensorboard
+      - psutil
+      - nvidia-ml-py3
+      - matplotlib
+      # - gitpython
+      # - scipy

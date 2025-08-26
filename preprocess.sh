@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=distill_preproc
+#SBATCH --job-name=preproc
 #SBATCH --output=logs/preproc_%j.out
 #SBATCH --error=logs/preproc_%j.err
 #SBATCH --partition=zen4
@@ -8,14 +8,18 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=24:00:00
-#SBATCH --array=0-3
+
 
 set -euo pipefail
 cd "${SLURM_SUBMIT_DIR:-$PWD}"
 
 mkdir -p logs data
-source ~/.bashrc
+
+source "$(conda info --base)/etc/profile.d/conda.sh"
+set +u
 conda activate distilbert
+set -u
+
 
 export TOKENIZERS_PARALLELISM=true
 
